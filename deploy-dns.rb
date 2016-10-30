@@ -16,7 +16,7 @@ footer = "### vpn-auto, stop ###"
 begin
 
 # Bin ich root?
-raise "Must run as root." unless Process.uid == 0
+raise "Must be run as root." unless Process.uid == 0
   
 # Erreichen wir die Adresse?
 #hp = Net::Ping::HTTP.new(uri)
